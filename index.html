@@ -7,6 +7,7 @@
 <title>Rainner's | Every Moment Deserves to Be Celebrated</title>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
 
 * {
@@ -41,7 +42,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(23,17,14,.96);
+    background: rgba(23,17,14,.97);
     border-bottom: 1px solid #765d2b;
 }
 
@@ -77,6 +78,10 @@ header {
     font-size: 12px;
 }
 
+.menu a {
+    transition: .3s;
+}
+
 .menu a:hover {
     color: #e2c66a;
 }
@@ -85,6 +90,7 @@ header {
     display: none;
     color: #d7b85b;
     font-size: 25px;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -105,6 +111,7 @@ header {
     width: 100%;
     margin: auto;
     padding: 80px 25px;
+    text-align: center;
 }
 
 .location {
@@ -118,13 +125,15 @@ header {
 .hero h1 {
     font-size: clamp(48px, 9vw, 88px);
     line-height: .95;
-    max-width: 700px;
+    max-width: 800px;
+    margin: 0 auto;
     font-weight: 500;
+    text-align: center;
 }
 
 .hero p {
     max-width: 560px;
-    margin: 25px 0 35px;
+    margin: 25px auto 35px;
     color: #ddd2c4;
     font-size: 14px;
 }
@@ -133,6 +142,7 @@ header {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -219,20 +229,28 @@ section {
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    transition: .3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
 }
 
 .service:nth-child(1) {
-    background-image: linear-gradient(transparent,rgba(0,0,0,.8)),
+    background-image:
+    linear-gradient(transparent,rgba(0,0,0,.8)),
     url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80');
 }
 
 .service:nth-child(2) {
-    background-image: linear-gradient(transparent,rgba(0,0,0,.8)),
+    background-image:
+    linear-gradient(transparent,rgba(0,0,0,.8)),
     url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80');
 }
 
 .service:nth-child(3) {
-    background-image: linear-gradient(transparent,rgba(0,0,0,.8)),
+    background-image:
+    linear-gradient(transparent,rgba(0,0,0,.8)),
     url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80');
 }
 
@@ -272,6 +290,11 @@ section {
     border: 1px solid #d8cfc2;
     padding: 35px 25px;
     position: relative;
+    transition: .3s;
+}
+
+.plan:hover {
+    transform: translateY(-4px);
 }
 
 .plan.popular {
@@ -293,10 +316,22 @@ section {
     font-size: 28px;
 }
 
+.plan > p {
+    font-size: 12px;
+    color: #75685e;
+    margin-top: 5px;
+}
+
 .price {
     font-size: 32px;
     font-family: 'Cormorant Garamond',serif;
     margin: 12px 0 20px;
+}
+
+.price small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    color: #75685e;
 }
 
 .plan ul {
@@ -313,6 +348,10 @@ section {
 .plan .btn {
     color: #211914;
     margin-top: 25px;
+}
+
+.plan .btn.gold {
+    background: #d7b85b;
 }
 
 /* STORY */
@@ -333,6 +372,11 @@ section {
     margin-bottom: 20px;
 }
 
+.story p {
+    color: #c8bdb1;
+    font-size: 14px;
+}
+
 /* TESTIMONIALS */
 
 .testimonials {
@@ -350,6 +394,7 @@ section {
 .testimonial {
     background: white;
     padding: 28px;
+    border: 1px solid #ded4c7;
 }
 
 .stars {
@@ -400,6 +445,41 @@ section {
     margin-bottom: 30px;
 }
 
+/* CONTACT */
+
+.contact {
+    background: #f2eadf;
+    color: #211914;
+}
+
+.contact-box {
+    max-width: 800px;
+    margin: 45px auto 0;
+    text-align: center;
+    background: white;
+    padding: 45px 25px;
+    border: 1px solid #d8cfc2;
+}
+
+.contact-box h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    color: #675b51;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.whatsapp-number {
+    display: block;
+    color: #211914;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
 /* FOOTER */
 
 footer {
@@ -439,6 +519,11 @@ footer a {
     color: #a99d92;
     font-size: 11px;
     margin: 8px 0;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #d7b85b;
 }
 
 .copyright {
@@ -448,6 +533,7 @@ footer a {
     border-top: 1px solid #30251f;
     color: #6f655d;
     font-size: 9px;
+    text-align: center;
 }
 
 /* MOBILE */
@@ -456,6 +542,23 @@ footer a {
 
     .menu {
         display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: #17110e;
+        flex-direction: column;
+        gap: 0;
+        border-bottom: 1px solid #765d2b;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 15px 22px;
+        border-top: 1px solid #30251f;
     }
 
     .menu-button {
@@ -468,6 +571,10 @@ footer a {
 
     .hero h1 {
         font-size: 55px;
+    }
+
+    .hero p {
+        font-size: 13px;
     }
 
     .service-grid,
@@ -492,38 +599,61 @@ footer a {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
+    .contact-box {
+        padding: 35px 20px;
+    }
+
+    .whatsapp-number {
+        font-size: 25px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="nav">
+
         <a href="#" class="logo">
             ✥ Rainner's
             <span>Celebrations & Experiences</span>
         </a>
 
-        <nav class="menu">
+        <nav class="menu" id="menu">
+
             <a href="#services">Services</a>
             <a href="#plans">Plans</a>
             <a href="#about">About</a>
+            <a href="#testimonials">Reviews</a>
             <a href="#contact">Contact</a>
+
         </nav>
 
-        <div class="menu-button">☰</div>
+        <div class="menu-button" onclick="toggleMenu()">☰</div>
+
     </div>
+
 </header>
 
 <main>
 
+<!-- HERO -->
+
 <section class="hero">
+
     <div class="hero-content">
 
-        <div class="location">Harare, Zimbabwe</div>
+        <div class="location">
+            Harare, Zimbabwe
+        </div>
 
-        <h1>Every Moment Deserves to Be Celebrated.</h1>
+        <h1>
+            Every Moment Deserves to Be Celebrated.
+        </h1>
 
         <p>
             From intimate birthdays to unforgettable weddings,
@@ -532,20 +662,35 @@ footer a {
         </p>
 
         <div class="buttons">
-            <a href="#services" class="btn gold">Explore Our Services</a>
-            <a href="#plans" class="btn">View Subscription Plans</a>
+
+            <a href="#services" class="btn gold">
+                Explore Our Services
+            </a>
+
+            <a href="#plans" class="btn">
+                View Subscription Plans
+            </a>
+
         </div>
 
     </div>
+
 </section>
+
+
+<!-- SERVICES -->
 
 <section id="services" class="services">
 
     <div class="container">
 
-        <div class="eyebrow">What We Do</div>
+        <div class="eyebrow">
+            What We Do
+        </div>
 
-        <h2 class="section-title">Services Crafted With Love</h2>
+        <h2 class="section-title">
+            Services Crafted With Love
+        </h2>
 
         <p class="section-text">
             Every occasion is unique. We tailor each experience to
@@ -555,43 +700,78 @@ footer a {
         <div class="service-grid">
 
             <div class="service">
-                <h3>Birthday Celebrations</h3>
+
+                <h3>
+                    Birthday Celebrations
+                </h3>
+
                 <p>
                     We transform birthdays into unforgettable
                     milestones with thoughtful details.
                 </p>
-                <div class="learn">Learn More →</div>
+
+                <div class="learn">
+                    Learn More →
+                </div>
+
             </div>
 
+
             <div class="service">
-                <h3>Couples & Group Trips</h3>
+
+                <h3>
+                    Couples & Group Trips
+                </h3>
+
                 <p>
                     Romantic escapes and group adventures,
                     thoughtfully planned for memorable experiences.
                 </p>
-                <div class="learn">Learn More →</div>
+
+                <div class="learn">
+                    Learn More →
+                </div>
+
             </div>
 
+
             <div class="service">
-                <h3>Catering Services</h3>
+
+                <h3>
+                    Catering Services
+                </h3>
+
                 <p>
                     Exquisite menus and flawless presentation
                     for weddings, corporate events and gatherings.
                 </p>
-                <div class="learn">Learn More →</div>
+
+                <div class="learn">
+                    Learn More →
+                </div>
+
             </div>
 
         </div>
+
     </div>
+
 </section>
+
+
+<!-- PLANS -->
 
 <section id="plans" class="plans">
 
     <div class="container">
 
-        <div class="eyebrow">Monthly Plans</div>
+        <div class="eyebrow">
+            Monthly Plans
+        </div>
 
-        <h2 class="section-title">Celebrate All Year Round</h2>
+        <h2 class="section-title">
+            Celebrate All Year Round
+        </h2>
 
         <p class="section-text">
             Subscribe to Rainner's and never miss a moment worth
@@ -601,70 +781,125 @@ footer a {
 
         <div class="plan-grid">
 
-            <div class="plan">
-                <h3>Essential</h3>
-                <p>Perfect for individuals and small families.</p>
 
-                <div class="price">USD 49 <small>per month</small></div>
+            <div class="plan">
+
+                <h3>
+                    Essential
+                </h3>
+
+                <p>
+                    Perfect for individuals and small families.
+                </p>
+
+                <div class="price">
+                    USD 49
+                    <small>per month</small>
+                </div>
 
                 <ul>
+
                     <li>✓ 1 birthday celebration setup per month</li>
                     <li>✓ Gift curation & delivery</li>
                     <li>✓ Priority booking access</li>
                     <li>✓ Monthly celebration newsletter</li>
+
                 </ul>
 
-                <a href="#contact" class="btn">Get Started</a>
+                <a href="#contact" class="btn">
+                    Get Started
+                </a>
+
             </div>
 
+
             <div class="plan popular">
-                <div class="popular-label">Most Popular</div>
 
-                <h3>Premium</h3>
-                <p>Ideal for couples and growing families.</p>
+                <div class="popular-label">
+                    Most Popular
+                </div>
 
-                <div class="price">USD 99 <small>per month</small></div>
+                <h3>
+                    Premium
+                </h3>
+
+                <p>
+                    Ideal for couples and growing families.
+                </p>
+
+                <div class="price">
+                    USD 99
+                    <small>per month</small>
+                </div>
 
                 <ul>
+
                     <li>✓ Unlimited event setups</li>
                     <li>✓ Full catering services included</li>
                     <li>✓ Curated couples & group trips</li>
                     <li>✓ 24/7 concierge support</li>
                     <li>✓ Bespoke gifting & floral design</li>
                     <li>✓ VIP access to exclusive experiences</li>
+
                 </ul>
 
-                <a href="#contact" class="btn gold">Go Luxe</a>
+                <a href="#contact" class="btn gold">
+                    Go Luxe
+                </a>
+
             </div>
 
-            <div class="plan">
-                <h3>Signature</h3>
-                <p>For those who want the complete experience.</p>
 
-                <div class="price">Custom</div>
+            <div class="plan">
+
+                <h3>
+                    Signature
+                </h3>
+
+                <p>
+                    For those who want the complete experience.
+                </p>
+
+                <div class="price">
+                    Custom
+                </div>
 
                 <ul>
+
                     <li>✓ Fully personalised planning</li>
                     <li>✓ Premium event experiences</li>
                     <li>✓ Dedicated concierge</li>
                     <li>✓ Luxury gifting</li>
                     <li>✓ Exclusive travel experiences</li>
+
                 </ul>
 
-                <a href="#contact" class="btn">Contact Us</a>
+                <a href="#contact" class="btn">
+                    Contact Us
+                </a>
+
             </div>
 
         </div>
+
     </div>
+
 </section>
+
+
+<!-- ABOUT / STORY -->
 
 <section id="about" class="story">
 
     <div class="story-box">
 
-        <div class="eyebrow">Begin Your Story</div>
+        <div class="eyebrow">
+            Begin Your Story
+        </div>
 
-        <h2>Let Us Make Your Next Occasion Unforgettable.</h2>
+        <h2>
+            Let Us Make Your Next Occasion Unforgettable.
+        </h2>
 
         <p>
             Whether it's a birthday, a journey, a feast, or a
@@ -673,23 +908,201 @@ footer a {
 
         <br>
 
-        <div class="buttons" style="justify-content:center;">
-            <a href="#contact" class="btn gold">Book a Consultation</a>
-            <a href="#services" class="btn">View All Services</a>
+        <div class="buttons">
+
+            <a href="#contact" class="btn gold">
+                Book a Consultation
+            </a>
+
+            <a href="#services" class="btn">
+                View All Services
+            </a>
+
         </div>
 
     </div>
 
 </section>
 
-<section class="testimonials">
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" class="testimonials">
 
     <div class="container">
 
-        <div class="eyebrow">Kind Words</div>
+        <div class="eyebrow">
+            Kind Words
+        </div>
 
-        <h2 class="section-title">What Our Clients Say</h2>
+        <h2 class="section-title">
+            What Our Clients Say
+        </h2>
 
         <div class="testimonial-grid">
 
-            <div class="testimonial
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Rainner's made my birthday feel truly special.
+                    Everything was beautifully organised and I didn't
+                    have to worry about a thing."
+                </p>
+
+                <small>
+                    — Happy Client
+                </small>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "From the planning to the final details,
+                    everything felt personal, elegant and incredibly
+                    well organised."
+                </p>
+
+                <small>
+                    — Happy Client
+                </small>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Rainner's turned an ordinary occasion into
+                    something we will remember for years to come.
+                    Absolutely beautiful."
+                </p>
+
+                <small>
+                    — Happy Client
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <div class="eyebrow">
+            Your Moment Awaits
+        </div>
+
+        <h2>
+            Let's Create Something Beautiful Together.
+        </h2>
+
+        <p>
+            Tell us about your next celebration and let Rainner's
+            help you turn your vision into an unforgettable experience.
+        </p>
+
+        <div class="buttons">
+
+            <a
+                href="https://wa.me/263771644767"
+                target="_blank"
+                class="btn gold">
+                WhatsApp Rainner's
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            Get In Touch
+        </div>
+
+        <h2 class="section-title">
+            Let's Plan Your Celebration
+        </h2>
+
+        <p class="section-text">
+            Ready to create a memorable experience?
+            Contact Rainner's directly and let's start planning.
+        </p>
+
+        <div class="contact-box">
+
+            <h3>
+                WhatsApp Rainner's
+            </h3>
+
+            <p>
+                For bookings, enquiries, celebrations and
+                personalised experiences.
+            </p>
+
+            <a
+                href="https://wa.me/263771644767"
+                target="_blank"
+                class="whatsapp-number">
+                +263 771 644 767
+            </a>
+
+            <a
+                href="https://wa.me/263771644767"
+                target="_blank"
+                class="btn gold">
+                Start a WhatsApp Chat
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <div class="footer-logo">
+                ✥ Rainner's
+   
